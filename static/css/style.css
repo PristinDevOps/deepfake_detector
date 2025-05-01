@@ -1,0 +1,109 @@
+/* Main Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-radius: 8px 8px 0 0 !important;
+}
+
+/* Fix Bootstrap tabs in Firefox */
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* Upload Section */
+.form-control:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25);
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+/* Results Section */
+#result-badge {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+#result-badge.real {
+    background-color: #28a745;
+}
+
+#result-badge.fake {
+    background-color: #dc3545;
+}
+
+.progress {
+    border-radius: 20px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    transition: width 0.8s ease;
+    border-radius: 20px;
+}
+
+.progress-bar.real {
+    background-color: #28a745;
+}
+
+.progress-bar.fake {
+    background-color: #dc3545;
+}
+
+/* Image/Video Results */
+#result-image, #result-video {
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading animation */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-8, .col-md-4 {
+        margin-bottom: 20px;
+    }
+    
+    #result-image, #result-video {
+        max-height: 300px;
+    }
+} 

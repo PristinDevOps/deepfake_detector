@@ -1,0 +1,11 @@
+kagglehub
+torch
+torchvision
+numpy
+pandas
+scikit-learn
+matplotlib
+pillow
+opencv-python
+flask
+werkzeug 
